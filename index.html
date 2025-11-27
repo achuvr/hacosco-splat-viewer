@@ -12,14 +12,10 @@
 
 <a-scene renderer="antialias: false" xr-mode-ui="enabled: true">
 
-    <a-assets>
-        <a-asset-item id="splat-model" src="./Hospital.splat"></a-asset-item>
-    </a-assets>
-
     <a-entity
-            gaussian_splatting="src: #splat-model;"
-            position="0 0 0"
-            rotation="0 0 180"
+            gaussian_splatting="src: https://storage.googleapis.com/gaussian-splatting-bucket/kitchen.splat;"
+            position="0 1.6 -3"
+            rotation="0 0 0"
             scale="1 1 1">
     </a-entity>
 
